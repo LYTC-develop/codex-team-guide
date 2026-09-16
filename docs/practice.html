@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>商品表單練習場｜LYTC</title><meta name="description" content="使用虛構商品資料練習 AI 操作表單、核對與下載草稿。"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="practice.js" defer></script></head>
+<body>
+<header class="site-header"><a class="brand" href="./"><span class="logo">L↗</span> LYTC</a><nav aria-label="返回教材"><a href="./#admin">回到操作練習 ↗</a></nav></header>
+<main class="lab">
+<section class="lab-intro"><p class="eyebrow">Computer use / 練習場</p><h1>商品上架草稿</h1><p>用商品 A 的虛構資料填表，建立預覽，再下載草稿。這裡不連正式商店，也不會發布商品。</p></section>
+<noscript><p>這個表單需要開啟 JavaScript，才能預覽與下載草稿。</p></noscript>
+<div class="lab-grid">
+<form id="product-form" class="lab-panel"><h2>填寫商品資料</h2>
+<label for="product-name">商品名稱</label><input id="product-name" name="productName" required maxlength="100" autocomplete="off">
+<label for="sku">SKU／商品編號</label><input id="sku" name="sku" required maxlength="60" autocomplete="off">
+<label for="price">售價（NT$）</label><input id="price" name="price" type="number" min="1" max="9999999" step="1" required inputmode="numeric">
+<label for="shipping">配送方式</label><select id="shipping" name="shipping" required><option value="">請選擇</option><option value="常溫宅配">常溫宅配</option><option value="冷凍宅配">冷凍宅配</option><option value="超商取貨">超商取貨</option></select>
+<label for="selling-points">已確認賣點</label><textarea id="selling-points" name="sellingPoints" required maxlength="1000" placeholder="每行一項，只填有資料支持的賣點。"></textarea>
+<label for="pending">待確認事項</label><textarea id="pending" name="pending" maxlength="1000" placeholder="資料還不確定的部分放這裡。"></textarea>
+<button class="button primary" type="submit">建立草稿預覽</button><p class="lab-notice">草稿只在目前頁面暫存。重新整理會清除；需要保留時，請下載檔案。</p>
+</form>
+<section class="lab-panel" aria-labelledby="preview-heading"><h2 id="preview-heading">核對草稿</h2><p class="preview-empty" id="preview-empty">填好左側資料並建立預覽後，商品內容會出現在這裡。</p><div id="preview" hidden><div class="preview-row"><small>商品名稱</small><p id="preview-name"></p></div><div class="preview-row"><small>SKU</small><p id="preview-sku"></p></div><div class="preview-row"><small>售價</small><p id="preview-price"></p></div><div class="preview-row"><small>配送方式</small><p id="preview-shipping"></p></div><div class="preview-row"><small>已確認賣點</small><p id="preview-points"></p></div><div class="preview-row"><small>待確認事項</small><p id="preview-pending"></p></div><button id="download-draft" class="button primary" type="button">下載商品草稿</button></div><p id="lab-status" class="lab-status" role="status" aria-live="polite"></p></section>
+</div>
+<footer><span>虛構資料練習 · 不儲存到伺服器</span><a href="./#practice">其他練習 ↑</a></footer>
+</main></body></html>
