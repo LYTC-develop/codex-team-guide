@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183de4">
+  <meta name="description" content="給已會用 ChatGPT 的同事：認識 GitHub、API、MCP 與 Skill，透過美編、財務、行政案例，用 Codex 完成可交付的工作。">
+  <meta property="og:title" content="Codex 工作指南｜LYTC 團隊學習手冊">
+  <meta property="og:description" content="從會對話，到完成工作。用真實職務情境，理解工具、資料與交付。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_TW">
+  <title>Codex 工作指南｜LYTC 團隊學習手冊</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <header class="mobile-header">
+    <a class="mobile-brand" href="#overview">LYTC <span>Codex 工作指南</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="sidebar">章節目錄 <span aria-hidden="true">☰</span></button>
+  </header>
+  <aside class="sidebar" id="sidebar" aria-label="教材導覽">
+    <a class="brand" href="#overview" aria-label="LYTC 工作指南首頁"><span class="brand-mark">L<span>↗</span></span><span>LYTC<span class="brand-sub">TEAM PLAYBOOK</span></span></a>
+    <div class="sidebar-title">Codex 工作指南<span>團隊實踐手冊 / 01</span></div>
+    <p class="nav-label">學習路線</p>
+    <nav aria-label="章節">
+      <a href="#overview" class="active" aria-current="location"><span class="nav-num">01</span> 換一種工作方式</a>
+      <a href="#concepts"><span class="nav-num">02</span> 看懂常用名詞</a>
+      <a href="#connections"><span class="nav-num">03</span> 工具如何串在一起</a>
+      <a href="#practice"><span class="nav-num">04</span> 三個實務案例</a>
+      <a href="#start"><span class="nav-num">05</span> 開始你的第一項工作</a>
+      <a href="#delivery"><span class="nav-num">06</span> 驗收與交接</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="edition">繁體中文 · v1.0</span><a href="https://github.com/LYTC-develop/codex-team-guide" target="_blank" rel="noopener noreferrer">GitHub 教材專案 <span aria-hidden="true">↗</span></a><span class="updated">更新於 2026.09.17</span></div>
+  </aside>
+  <main id="main">
+    <div class="topline"><span>永發服務 · 團隊學習</span><a href="#practice">直接看工作案例 <span aria-hidden="true">↘</span></a></div>
+    <section id="overview" class="hero chapter" aria-labelledby="overview-title">
+      <div class="eyebrow"><span class="chapter-number">01</span> 從 ChatGPT 到 Codex</div>
+      <h1 id="overview-title">你已經會與 AI 對話。<br>現在，讓它一起<span class="blue">完成工作。</span></h1>
+      <p class="hero-intro">把資料、工具與公司流程放進同一個專案。<br class="desktop-break">從商品銷售圖到對帳報表，學會交代任務，也學會驗收成果。</p>
+      <div class="hero-meta"><span>適合已使用 ChatGPT 的同事</span><span>不需先學寫程式</span></div>
+      <div class="lesson-strip"><div><span class="lesson-label">讀完你會知道</span><strong>資料放哪裡</strong></div><div><span class="lesson-label">工具如何協作</span><strong>AI 怎麼動手做</strong></div><div><span class="lesson-label">成果如何判斷</span><strong>什麼才算完成</strong></div></div>
+      <div class="principle"><span class="principle-mark" aria-hidden="true">↳</span><p>這次的重點，是建立<strong>能重複使用的工作流程</strong>。ChatGPT 也能使用工具與處理檔案；團隊選擇用 Codex，把專案資料、製作方法與成果管理起來。</p></div>
+    </section>
+
+    <section id="concepts" class="chapter" aria-labelledby="concepts-title">
+      <div class="section-heading"><div><div class="eyebrow"><span class="chapter-number">02</span> 先建立共同語言</div><h2 id="concepts-title">名詞不用背，先知道用途。</h2></div><p>先讀一句話解釋。<br>展開卡片，看工作中的例子。</p></div>
+      <div class="term-group"><h3><span class="group-index">A</span> 工作放在哪裡？</h3><div class="term-grid">
+        <details class="term"><summary><span class="term-name">Project <small>專案</small></span><span class="term-brief">同一項工作的資料與任務集合。</span></summary><div class="term-detail">本教材主要使用本機專案資料夾。美編銷售圖、每月對帳各有自己的資料與流程；開始前先確認開啟的是哪一個專案。</div></details>
+        <details class="term"><summary><span class="term-name">Git / GitHub</span><span class="term-brief">Git 記錄版本；GitHub 提供線上協作。</span></summary><div class="term-detail">Git 能記錄檔案改了什麼。GitHub 託管 Git 專案，讓公司分發工作包與更新。存在電腦上的檔案，不會因此自動上傳。</div></details>
+        <details class="term"><summary><span class="term-name">Repository <small>儲存庫 / Repo</small></span><span class="term-brief">一套由 Git 管理的檔案與版本紀錄。</span></summary><div class="term-detail">例如公司「商品一頁式工作包」就是一個 Repo，裡面有教學、規範、範本與技能。Repo 可以公開，也可以只讓有權限的人存取。</div></details>
+        <details class="term"><summary><span class="term-name">Clone / Pull</span><span class="term-brief">首次取得專案；之後整合遠端更新。</span></summary><div class="term-detail">第一次用 Clone 取得本機儲存庫，以後按專案規則 Pull 更新。下載 ZIP 只取得一份檔案，不能直接當成 Clone 後的專案來 Pull。</div></details>
+        <details class="term"><summary><span class="term-name">Commit / Push</span><span class="term-brief">在本機記錄變更；再送到遠端。</span></summary><div class="term-detail">存檔、Commit、Push 是三個步驟。Commit 是記錄一批變更，Push 才把提交送到 GitHub。被 .gitignore 忽略的工作資料，不會隨一般提交上傳。</div></details>
+        <details class="term"><summary><span class="term-name">README / Markdown</span><span class="term-brief">專案入口說明，以及容易閱讀的文字格式。</span></summary><div class="term-detail">第一次取得工作包，先讀 README.md。Markdown 用簡單標記寫標題、清單、表格與連結；.md 就是常見副檔名，不需要寫網頁程式才能修改內容。</div></details>
+      </div></div>
+      <div class="term-group"><h3><span class="group-index">B</span> AI 怎麼照公司方法做事？</h3><div class="term-grid">
+        <details class="term"><summary><span class="term-name">Agent <small>代理</small></span><span class="term-brief">能安排步驟、使用工具並檢查結果的 AI 系統。</span></summary><div class="term-detail">你交代要做商品圖，Agent 可以讀資料、查來源、編分鏡、呼叫圖片工具，再檢查產出。能做哪些事，取決於現有工具與權限。</div></details>
+        <details class="term"><summary><span class="term-name">Context <small>上下文</small></span><span class="term-brief">AI 這次工作取得的資料、對話與規則。</span></summary><div class="term-detail">商品規格、品牌偏好、上一版修改原因都是上下文。開新任務時，提供檔案位置與必要背景；別假設它已讀過其他任務裡的資料。</div></details>
+        <details class="term"><summary><span class="term-name">AGENTS.md</span><span class="term-brief">給 Codex 讀取的專案工作指引。</span></summary><div class="term-detail">例如規定素材放哪裡、先做哪些研究、最後交付什麼。它協助 AI 遵循團隊流程，但不是技術上的權限鎖。</div></details>
+        <details class="term"><summary><span class="term-name">Skill <small>技能</small></span><span class="term-brief">一套可重複使用的工作指引。</span></summary><div class="term-detail">Skill 可以附範本、參考資料與程式，例如銷售分鏡或圖片校對流程。它教 AI 怎麼做；要實際生圖，還需要可用的圖片工具。</div></details>
+        <details class="term"><summary><span class="term-name">Tool <small>工具</small></span><span class="term-brief">AI 真正執行操作的能力。</span></summary><div class="term-detail">讀檔、查網頁、生圖、操作試算表都是工具能力。當 AI 說無法存取或操作時，先檢查工具與授權，單純改提示詞未必能解決。</div></details>
+      </div></div>
+      <div class="term-group"><h3><span class="group-index">C</span> 怎麼連到公司的其他系統？</h3><div class="term-grid">
+        <details class="term"><summary><span class="term-name">API</span><span class="term-brief">系統給程式讀資料、執行操作的介面。</span></summary><div class="term-detail">例如訂單 API 讓程式查詢訂單，而不必人工下載報表。不同 API 提供的操作不同，可能有權限、額度或收費限制。</div></details>
+        <details class="term"><summary><span class="term-name">MCP</span><span class="term-brief">讓 AI 用共同規格連接工具與資料的協定。</span></summary><div class="term-detail">全名是 Model Context Protocol。MCP 服務可以提供查表、讀文件等工具；工具背後可能呼叫 API，也可能操作本機檔案。接上 MCP 不代表取得所有系統能力。</div></details>
+        <details class="term"><summary><span class="term-name">Plugin <small>外掛</small></span><span class="term-brief">可安裝的擴充套件。</span></summary><div class="term-detail">外掛可打包 Skills、工具連接等內容，讓團隊更容易安裝工作能力。安裝完成後，仍要確認需要的帳號授權與工具是否可用。</div></details>
+        <details class="term"><summary><span class="term-name">OAuth / API Key</span><span class="term-brief">讓系統辨識身分、授予存取能力的方式。</span></summary><div class="term-detail">OAuth 常見為登入帳號後同意授權；API Key 是服務辨識呼叫者的憑證之一。讀取、修改可能是不同權限。使用工具的登入或憑證設定流程，不把金鑰放進教材或任務內容。</div></details>
+      </div></div>
+      <p class="source-note">能力說明：<a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noopener noreferrer">OpenAI Skills ↗</a><a href="https://learn.chatgpt.com/docs/extend/mcp" target="_blank" rel="noopener noreferrer">OpenAI MCP ↗</a></p>
+    </section>
+
+    <section id="connections" class="chapter" aria-labelledby="connections-title">
+      <div class="section-heading"><div><div class="eyebrow"><span class="chapter-number">03</span> 把名詞連成工作流程</div><h2 id="connections-title">從一個需求，到一份成果。</h2></div></div>
+      <div class="connection-panel"><div class="connection-header"><span class="mini-label">以訂單對帳為例</span><p>「幫我找出本月還沒對上的款項。」</p></div><ol class="connection-flow"><li><span class="flow-step">01</span><strong>Codex</strong><p>讀取規則<br>安排比對步驟</p></li><li><span class="flow-step">02</span><strong>MCP 工具</strong><p>提供查帳操作<br>傳遞資料要求</p></li><li><span class="flow-step">03</span><strong>系統 API</strong><p>查詢授權範圍內<br>的訂單與收款</p></li><li><span class="flow-step">04</span><strong>對帳報表</strong><p>列出差異與來源<br>交由你驗收</p></li></ol><div class="connection-footer"><strong>Skill</strong><span>沿途套用公司方法：怎麼配對、怎麼處理例外、怎麼檢查總額。</span></div></div>
+      <p class="body-note">這是一種串接方式，並非每項任務都需要 MCP 或 API。手邊已有 Excel／CSV 檔，就可以先從檔案開始；需要持續讀取系統資料時，再處理串接。</p>
+      <div class="callout"><strong>先確認能力，再交付工作。</strong><p>可以直接問 Codex：「請確認這個專案目前可用的工具、可讀取的資料，以及完成本任務還缺少什麼。」</p></div>
+    </section>
+
+    <section id="practice" class="chapter" aria-labelledby="practice-title">
+      <div class="section-heading"><div><div class="eyebrow"><span class="chapter-number">04</span> 從自己的職務開始</div><h2 id="practice-title">有產出的工作，才值得練習。</h2></div><p>選一個熟悉的情境，<br>把範例換成手上的工作。</p></div>
+      <div class="case-links" aria-label="工作案例捷徑"><a href="#design">01 美編與行銷 <span aria-hidden="true">↗</span></a><a href="#finance">02 財務對帳 <span aria-hidden="true">↗</span></a><a href="#admin">03 行政管理 <span aria-hidden="true">↗</span></a></div>
+
+      <article id="design" class="case-study"><div class="case-heading"><div><span class="case-kicker">01 / 美編與行銷</span><h3>做出一組能交接的<br>商品銷售圖。</h3></div><span class="case-badge">公司既有工作包</span></div><p class="case-intro">從商品資料出發，完成研究、銷售分鏡與圖組，讓網站同事拿到檔案就知道怎麼上架。</p>
+        <div class="case-steps"><div><h4>你準備</h4><p>商品照片、規格、賣點依據、售價、客群與品牌規範。</p></div><div><h4>Codex 執行</h4><p>市場研究、逐張分鏡、製圖、手機預覽與文字校對。</p></div><div><h4>你驗收</h4><p>產品與價格正確、手機看得清楚、檔案排序與尺寸符合上架需求。</p></div></div>
+        <div class="deliverable"><span>應拿到的成果</span><p>銷售圖組 <b>＋</b> 文案逐字稿 <b>＋</b> 資料來源 <b>＋</b> 校對與交付清單</p></div>
+        <div class="prompt-box"><div class="prompt-header"><span>可以這樣交代任務</span><button class="copy-button" data-copy="prompt-design">複製任務 <span aria-hidden="true">⧉</span></button></div><p id="prompt-design">請先讀取 AGENTS.md，使用 yf-mobile-sales-page，依 personal/ 本次商品的資料製作八張手機一頁式銷售圖。先查相關市場案例，整理每張圖的購買理由、文案與證據，再依分鏡完成圖組。缺少依據的數字或賣點列為待確認。交付放 outputs/ 本次活動資料夾，包含依序上傳的圖片、文案逐字稿、來源與手機檢查結果。我要能交給網站同事上架的檔案。</p></div>
+        <details class="case-notes"><summary>開始前，先確認工作包與素材</summary><div><p>這段任務適用公司 <a href="https://github.com/LYTC-develop/product-landingpage-starter" target="_blank" rel="noopener noreferrer">商品一頁式工作包 ↗</a>。該儲存庫需要存取權；先依 README Clone，再用 Codex 開啟專案根目錄。</p><p>確認圖片工具與額度可用。需要可編輯文字層時要明說，PNG／JPG 本身是平面圖。既有蕎麥麵範例是單張首圖，完整圖組仍需依本次商品製作；數字也應核對本批次標示。</p><p>這個工作包的 personal/ 與 outputs/ 不進 Git，要另外保存與交接；其他專案依各自規則處理。</p></div></details>
+        <div class="learn-tags"><span>這裡會用到</span><span>GitHub</span><span>Clone</span><span>AGENTS.md</span><span>Skill</span><span>Tool</span></div>
+      </article>
+
+      <article id="finance" class="case-study"><div class="case-heading"><div><span class="case-kicker">02 / 財務對帳</span><h3>讓每筆收款差異，<br>都有來源可查。</h3></div><span class="case-badge neutral">檔案練習情境</span></div><p class="case-intro">先用匯出的報表完成比對，讓財務把時間放在差異與例外處理。這個案例不預設已串接公司系統。</p>
+        <div class="case-steps"><div><h4>你準備</h4><p>同期間的訂單、收款、退款、手續費資料，以及配對與入帳日規則。</p></div><div><h4>Codex 執行</h4><p>統一欄位、依規則配對、計算差額、標記跨期與未配對款項。</p></div><div><h4>你驗收</h4><p>總額與筆數能核對；例外能回查來源；配對不唯一的項目有標記。</p></div></div>
+        <div class="deliverable"><span>應拿到的成果</span><p>對帳工作簿 <b>＋</b> 未配對清單 <b>＋</b> 差異原因 <b>＋</b> 來源檔案與列號</p></div>
+        <div class="prompt-box"><div class="prompt-header"><span>可以這樣交代任務</span><button class="copy-button" data-copy="prompt-finance">複製任務 <span aria-hidden="true">⧉</span></button></div><p id="prompt-finance">請先盤點我提供的本月訂單、收款與退款資料，說明可使用的配對欄位。依我提供的對帳規則處理，將退款、手續費與跨期入帳分開列示。輸出對帳工作簿，包含已配對、未配對、差額及來源檔名與列號，並核對輸入與輸出筆數、金額。缺少規則或配對不唯一時，列出待確認項目。本次交付對帳報表，不變更正式帳務。</p></div>
+        <details class="case-notes"><summary>什麼時候才需要 API 或 MCP？</summary><div><p>已有完整匯出檔，就可以先做對帳。若每月都需要手動下載同樣的資料，再評估直接從系統讀取。</p><p>串接前確認工具能讀到需要的欄位、帳號與期間。連線成功，只代表取得工具；仍要核對資料完整性與報表計算。</p></div></details>
+        <div class="learn-tags"><span>這裡會用到</span><span>Context</span><span>Tool</span><span>API / MCP（串接時）</span></div>
+      </article>
+
+      <article id="admin" class="case-study"><div class="case-heading"><div><span class="case-kicker">03 / 行政管理</span><h3>把散落的合約，<br>變成可追蹤的待辦。</h3></div><span class="case-badge neutral">檔案練習情境</span></div><p class="case-intro">建立合約台帳與未來 90 天的待辦，保留日期依據，讓接手的同事找得到原文。</p>
+        <div class="case-steps"><div><h4>你準備</h4><p>合約檔、內部負責人對照表，以及整理的基準日期。</p></div><div><h4>Codex 執行</h4><p>擷取合約期限、續約與通知條件，計算待辦日期，列出缺件。</p></div><div><h4>你驗收</h4><p>關鍵日期與原文一致；計算依據清楚；未明確的條款保留待確認。</p></div></div>
+        <div class="deliverable"><span>應拿到的成果</span><p>合約台帳 <b>＋</b> 90 天待辦 <b>＋</b> 缺件清單 <b>＋</b> 原文頁碼與依據</p></div>
+        <div class="prompt-box"><div class="prompt-header"><span>可以這樣交代任務</span><button class="copy-button" data-copy="prompt-admin">複製任務 <span aria-hidden="true">⧉</span></button></div><p id="prompt-admin">請整理我提供的供應商合約，建立合約台帳與未來 90 天待辦清單。擷取合約對象、生效日、到期日、自動續約、提前通知條件與內部負責人。計算出的日期請附計算依據；每筆資料附來源檔名與頁碼。條款不清楚、掃描辨識不確定或缺少負責人的項目列為待確認。交付可編輯表格，本次不寄信或通知外部對象。</p></div>
+        <details class="case-notes"><summary>從整理文件，到後續協作</summary><div><p>先把台帳做準，再決定要不要寫入共享試算表或行事曆。實際更新前，確認帳號、目標檔案、寫入權限與要新增的內容。</p><p>日期有疑義時回查原文；需要判斷條款意義的部分，交由負責人確認，不用猜測補滿表格。</p></div></details>
+        <div class="learn-tags"><span>這裡會用到</span><span>Project</span><span>Context</span><span>Tool</span><span>OAuth（串接時）</span></div>
+      </article>
+    </section>
+
+    <section id="start" class="chapter" aria-labelledby="start-title"><div class="section-heading"><div><div class="eyebrow"><span class="chapter-number">05</span> 把方法帶回日常工作</div><h2 id="start-title">開始前，說清楚這五件事。</h2></div></div>
+      <ol class="brief-list"><li><span>01</span><div><h3>目標</h3><p>這份成果要給誰使用、解決什麼問題？</p></div><div class="brief-example">交給網站同事上架的商品銷售圖。</div></li><li><span>02</span><div><h3>資料位置</h3><p>哪些檔案是這次工作應採用的來源？</p></div><div class="brief-example">本次活動資料夾裡的商品照片與規格。</div></li><li><span>03</span><div><h3>工作規則</h3><p>依照哪一套流程，有哪些必要限制？</p></div><div class="brief-example">依公司工作包製作，數字以本品資料為準。</div></li><li><span>04</span><div><h3>交付物</h3><p>最後需要哪些實際檔案？</p></div><div class="brief-example">八張圖片、文案逐字稿、來源與校對紀錄。</div></li><li><span>05</span><div><h3>完成標準</h3><p>你會如何檢查這項工作？</p></div><div class="brief-example">手機可讀、價格正確、尺寸符合、檔案可開啟。</div></li></ol>
+      <div class="callout"><strong>第一次使用，照這個順序。</strong><p>開啟公司指定的專案 → 讀 README、準備資料 → 請 Codex 確認工具 → 複製並修改職務案例 → 查看產出 → 指出差異，繼續修正。</p></div>
+      <details class="case-notes"><summary>結果不對，下一句怎麼說？</summary><div><p>指出具體差異和要回查的資料，例如：</p><blockquote>「你交付的表格少了三筆退款，請依原始收款檔重新核對筆數與總額，修正報表並說明差異。」</blockquote><p>如果是無法讀檔、沒有工具或授權過期，先處理環境。讓 Codex 說明已完成的部分與實際卡點。</p></div></details>
+    </section>
+
+    <section id="delivery" class="chapter" aria-labelledby="delivery-title"><div class="section-heading"><div><div class="eyebrow"><span class="chapter-number">06</span> 最後一哩路</div><h2 id="delivery-title">看到成果，才算完成。</h2></div></div>
+      <div class="review-grid"><div><span class="review-num">1.</span><h3>成果在哪裡？</h3><p>拿到可開啟的檔案或可存取的連結，知道儲存位置與版本。</p></div><div><span class="review-num">2.</span><h3>驗證過什麼？</h3><p>圖片實際看過、數字核對過、資料能回查；了解檢查範圍。</p></div><div><span class="review-num">3.</span><h3>還差哪些事？</h3><p>待確認資料、缺件、人工判斷與下一位負責人的工作都要寫清楚。</p></div></div>
+      <div class="status-line"><strong>已規劃 ≠ 已生成 ≠ 已儲存 ≠ 已上架</strong><p>問清楚現在完成到哪一步，也把下一步交接出去。</p></div>
+      <p class="body-note">共用教材放操作說明、空白範本與可公開的例子。客戶、合約、帳務與實際工作素材，依公司規定保存；不要把它們加入公開教材。</p>
+      <div class="closing"><p>下一步，選一件你熟悉的工作。</p><a href="#practice">帶著自己的資料，開始練習 <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <footer><div><strong>LYTC</strong><span>永發服務 · 團隊學習手冊</span></div><p>內容更新：2026.09.17 · 工具與介面以實際環境為準</p><div class="footer-links"><a href="https://github.com/LYTC-develop/codex-team-guide">教材原始檔 ↗</a><a href="#overview">回到頁首 ↑</a></div></footer>
+  </main>
+  <div class="copy-status" role="status" aria-live="polite"></div>
+</body>
+</html>
