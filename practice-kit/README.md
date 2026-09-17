@@ -4,7 +4,9 @@
 
 1. 解壓縮後，在 Codex 開啟這個 `practice-kit` 資料夾。
 2. 告訴 Codex：「先閱讀這個專案的 README.md，再帶我做一個練習。」
-3. 選以下一項，成果儲存到 `outputs/`。
+3. 第一次請先做「Skill：整理商品美編需求單」，成果儲存到 `outputs/`。
+
+[依照網站第 5 章一步步操作](https://lytc-develop.github.io/codex-team-guide/example.html)。財務與表單操作是完成主線後的延伸練習。
 
 ## Doc：找出收款差異
 

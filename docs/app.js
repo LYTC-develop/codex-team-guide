@@ -1,6 +1,20 @@
 (() => {
   'use strict';
+  const legacy = {
+    overview: 'differences.html', practice: 'example.html', terms: 'terms.html',
+    finance: 'extras.html#finance', design: 'example.html', admin: 'extras.html#admin',
+    'term-github': 'terms.html#term-github', 'term-api': 'terms.html#term-api',
+    'term-mcp': 'terms.html#term-mcp', 'term-update': 'terms.html#term-update',
+    'term-agents': 'terms.html#term-agents'
+  };
+  const isHome = location.pathname.endsWith('/') || location.pathname.endsWith('/index.html');
+  if (isHome && legacy[location.hash.slice(1)]) {
+    location.replace(legacy[location.hash.slice(1)]);
+    return;
+  }
   document.documentElement.classList.add('js');
+  const menu = document.querySelector('.chapter-menu');
+  if (menu && window.matchMedia('(max-width: 680px)').matches) menu.open = false;
   const status = document.querySelector('.toast');
   let timer;
   function announce(message) {
