@@ -2,7 +2,7 @@
 
 **[開啟教學網站 →](https://lytc-develop.github.io/codex-team-guide/)**
 
-給已使用 ChatGPT 的同事。從安裝、設定與連接公司 GitHub 開始，照著完成商品首圖與改價版本。
+給已使用 ChatGPT 的同事。從安裝、設定與連接公司 GitHub 開始，照著完成商品首圖與改價，再上傳本機檔案及編輯雲端試算表。
 
 | 章節 | 內容 |
 |---|---|
@@ -12,11 +12,13 @@
 | [04 工作會遇到的名詞](https://lytc-develop.github.io/codex-team-guide/terms.html) | 用 GitHub、Repo、API 等名詞說清楚工作。 |
 | [05 連接 GitHub，取得公司專案](https://lytc-develop.github.io/codex-team-guide/github.html) | 登入、首次 Clone，以及日後請 Codex Pull 更新。 |
 | [06 完成第一個工作範例](https://lytc-develop.github.io/codex-team-guide/example.html) | 開啟美編專案，貼上對話，製作首圖再改價。 |
+| [07 第二個範例：Google Drive 與 Sheets](https://lytc-develop.github.io/codex-team-guide/google-drive.html) | 連接 Google、上傳本機檔案，直接修改雲端採購表。 |
 
-## 兩段可以整段貼上的對話
+## 可以整段貼上的教學對話
 
 1. [GitHub 連線與首次 Clone](https://lytc-develop.github.io/codex-team-guide/downloads/codex-github-setup.txt)：貼到「Codex工作區」的準備任務，完成登入、驗證與取得公司 Repo。
 2. [美編教學對話](https://lytc-develop.github.io/codex-team-guide/downloads/codex-first-task.txt)：改開實際美編專案、建立 Local 新任務後貼上，由 Codex 分階段帶做。
+3. [Google Drive 與 Sheets 教學對話](https://lytc-develop.github.io/codex-team-guide/downloads/codex-google-drive-task.txt)：安裝並連接 Google Drive 外掛，在自己的行政練習專案開新任務後貼上。附 [虛構採購練習包](https://lytc-develop.github.io/codex-team-guide/downloads/codex-drive-practice.zip)，不需要自行建立 Google Cloud 或 Cloudflare 設定。
 
 公司美編專案：[LYTC-develop/product-landingpage-starter](https://github.com/LYTC-develop/product-landingpage-starter)（私人，需公司開通權限）。本教材連到該工作包，不附其私人素材。
 
@@ -26,4 +28,4 @@
 
 Doc、Skill、Computer use 是本次導入重點，並非 Codex 獨有；能力依版本、工具、權限與額度而定。示範對話是教學腳本，並非已執行紀錄。
 
-教材 v3.2 · 2026-09-17。維護方式見 [MAINTENANCE.md](MAINTENANCE.md)。
+教材 v3.3 · 2026-09-17。維護方式見 [MAINTENANCE.md](MAINTENANCE.md)。
