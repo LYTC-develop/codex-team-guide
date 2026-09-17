@@ -1,0 +1,1 @@
+請依 docs/11-update.md 檢查並更新公司商品 Landing Page 工作包。確認是 LYTC-develop/product-landingpage-starter 的 Git Clone、main 分支、正確 origin 與上游後，用 git pull --ff-only 更新，保留 personal/ 和 outputs/。共用檔有修改、分岔或權限不足時，保留現況並說明，不強制覆蓋。完成後讀新版 AGENTS.md、VERSION，回報版本與結果。

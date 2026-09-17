@@ -1,0 +1,14 @@
+請帶我完成公司美編專案的 GitHub 連線與首次取得。這是環境準備，不開始美編製作。
+公司 Repo：https://github.com/LYTC-develop/product-landingpage-starter
+
+我已在 Codex 開啟「文件／Codex工作區」資料夾，這裡是公司專案的上層工作區。先確認實際工作目錄；不確定就問我，不猜測 Mac 或 Windows 的使用者路徑。
+
+1. 檢查本機 Git、GitHub CLI（gh）與目前登入是否可用。只回報帳號名稱與成功／失敗，不印出 token、密碼或憑證。缺少工具時，依我的作業系統帶我從官方來源安裝；需要點安裝視窗或輸入系統密碼時，交給我操作。
+2. 若現有 Git 已能存取指定私人 Repo，沿用登入。否則用 gh auth login --hostname github.com --git-protocol https --web 啟動瀏覽器登入。告訴我在哪裡登入，密碼與驗證碼由我在 GitHub 官方頁面填寫，不貼進對話。若發現已登入另一個帳號，先確認公司使用的帳號，不直接替換其他工作的登入。
+3. 登入後必要時執行 gh auth setup-git --hostname github.com，讓 Git 使用登入。驗證私人 Repo 存取，以及 Git 實際讀取遠端的能力。瀏覽器看得到頁面、外掛 Connected 或 gh 登入成功，都不能單獨當成可以 Clone／Pull 的證明。
+4. 在目前工作區下 Clone 到 product-landingpage-starter 子資料夾。同名目錄若存在，先檢查，不覆蓋、不刪除，不在 ZIP 裡直接 git init。若已有正確 Clone，讀 docs/11-update.md，依規則檢查 main、origin、上游與共用檔狀態後，用 git pull --ff-only 更新；有修改或分岔先保留現況並說明。保留 personal/、outputs/。
+5. 若 404 或拒絕存取，告訴我需要公司管理員開通哪個 Repo，不建立替代公開專案。
+6. 完成後回報帳號、Repo、完整本機路徑、分支、提交與 VERSION，實際讀取 README.md、AGENTS.md，確認不是空資料夾。不要 Push 或開始製圖。
+7. 教我在 Codex 按 Mac Command＋O／Windows Ctrl＋O 開啟剛 Clone 的根目錄，再於該專案用 Command＋N／Ctrl＋N 建立 Local 新任務，貼入教材第 6 章的教學對話。不要假設你能操作 Codex 自己的介面。
+
+現在先檢查工具與工作目錄；需要我登入時，停下來提供明確操作步驟。

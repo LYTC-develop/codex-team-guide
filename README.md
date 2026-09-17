@@ -2,30 +2,28 @@
 
 **[開啟教學網站 →](https://lytc-develop.github.io/codex-team-guide/)**
 
-給已經使用 ChatGPT 的同事。五個章節，從安裝開始，完成一份能交給美編的商品需求單。
+給已使用 ChatGPT 的同事。從安裝、設定與連接公司 GitHub 開始，照著完成商品首圖與改價版本。
 
-| 章節 | 你會學到什麼 |
+| 章節 | 內容 |
 |---|---|
-| [01 開始之前](https://lytc-develop.github.io/codex-team-guide/start.html) | 要完成的工作，以及電腦、帳號與資料準備。 |
-| [02 從零安裝 Codex](https://lytc-develop.github.io/codex-team-guide/install.html) | 官方下載、登入、選擇 Codex、開啟練習資料夾。 |
-| [03 跟 ChatGPT Web 差在哪](https://lytc-develop.github.io/codex-team-guide/differences.html) | Doc 留背景、Skill 留方法、Computer use 操作介面。 |
-| [04 工作會遇到的名詞](https://lytc-develop.github.io/codex-team-guide/terms.html) | GitHub、Repo、API、MCP 等名詞，搭配可以對 AI 說的話。 |
-| [05 完成第一個工作範例](https://lytc-develop.github.io/codex-team-guide/example.html) | 讀取商品資料，用 Skill 產出需求單、核對成果，再換一個商品重用。 |
+| [01 開始之前](https://lytc-develop.github.io/codex-team-guide/start.html) | 準備工作電腦、Codex 與公司 GitHub 帳號。 |
+| [02 從零安裝 Codex](https://lytc-develop.github.io/codex-team-guide/install.html) | 下載、登入，完成 Codex 工作設定。 |
+| [03 跟 ChatGPT Web 差在哪](https://lytc-develop.github.io/codex-team-guide/differences.html) | Doc 留資料、Skill 留方法、Computer use 操作工具。 |
+| [04 工作會遇到的名詞](https://lytc-develop.github.io/codex-team-guide/terms.html) | 用 GitHub、Repo、API 等名詞說清楚工作。 |
+| [05 連接 GitHub，取得公司專案](https://lytc-develop.github.io/codex-team-guide/github.html) | 登入、首次 Clone，以及日後請 Codex Pull 更新。 |
+| [06 完成第一個工作範例](https://lytc-develop.github.io/codex-team-guide/example.html) | 開啟美編專案，貼上對話，製作首圖再改價。 |
 
-三個觀念是本次導入的工作重點，並非 Codex 獨有功能；實際能力依版本、工具與授權而定。Doc 泛指專案文件。
+## 兩段可以整段貼上的對話
 
-## 動手做
+1. [GitHub 連線與首次 Clone](https://lytc-develop.github.io/codex-team-guide/downloads/codex-github-setup.txt)：貼到「Codex工作區」的準備任務，完成登入、驗證與取得公司 Repo。
+2. [美編教學對話](https://lytc-develop.github.io/codex-team-guide/downloads/codex-first-task.txt)：改開實際美編專案、建立 Local 新任務後貼上，由 Codex 分階段帶做。
 
-[下載練習包](https://lytc-develop.github.io/codex-team-guide/downloads/codex-practice-kit.zip)，解壓縮，在 Codex 開啟 `practice-kit` 資料夾。資料全部為虛構範例。
+公司美編專案：[LYTC-develop/product-landingpage-starter](https://github.com/LYTC-develop/product-landingpage-starter)（私人，需公司開通權限）。本教材連到該工作包，不附其私人素材。
 
-> 請使用 lytc-product-brief 技能，讀取 docs/product-a.md，產出可交給美編的需求單，存成 outputs/product-a-brief.md。若沒有發現技能，請先讀取 .agents/skills/lytc-product-brief/SKILL.md 並按其流程執行。
+首次 Clone，日後 [請 Codex Pull 更新](https://lytc-develop.github.io/codex-team-guide/github.html#pull)。日常素材在 personal/，作品在 outputs/，不推回公司 Repo，也不由 GitHub 備份。
 
-打開成果，核對商品資料、前三張圖的規劃與待補事項。沒有依據的「三分鐘上桌」「高蛋白」不能當成已確認的廣告賣點。完成後，用同一個 Skill 處理商品 B，體驗方法重用。
+[財務與行政補充練習](https://lytc-develop.github.io/codex-team-guide/extras.html) 仍提供虛構資料 ZIP，與主線的公司 Git Clone 分開。
 
-[延伸練習：財務對帳與商品表單操作](https://lytc-develop.github.io/codex-team-guide/extras.html) · [練習包說明](practice-kit/README.md)
+Doc、Skill、Computer use 是本次導入重點，並非 Codex 獨有；能力依版本、工具、權限與額度而定。示範對話是教學腳本，並非已執行紀錄。
 
-## 來源與維護
-
-[官方安裝與快速入門](https://learn.chatgpt.com/docs/quickstart) · [Skills](https://learn.chatgpt.com/docs/build-skills) · [Computer use](https://learn.chatgpt.com/docs/computer-use) · [MCP](https://learn.chatgpt.com/docs/extend/mcp)
-
-教材 v3.0 · 2026-09-17。網站維護見 [MAINTENANCE.md](MAINTENANCE.md)。實際工作資料與憑證依公司規定保存，不加入公開教材。
+教材 v3.2 · 2026-09-17。維護方式見 [MAINTENANCE.md](MAINTENANCE.md)。

@@ -6,18 +6,20 @@
 
 ## 內容方向
 
-首頁只保留五章目錄。主線依序是「開始之前 → 安裝 → 差異 → 名詞 → 一個完整範例」，每章獨立頁面，附上一章／下一章。不要把進階設定、長篇字典或流程清單堆回首頁。練習應有原始資料、可操作步驟、實際交付物及明確完成標準。
+首頁只保留六章目錄。主線依序是「開始之前 → 安裝設定 → 差異 → 名詞 → GitHub → 美編實作」，每章獨立頁面，附上一章／下一章。不要把進階設定、長篇字典或流程清單堆回首頁。練習應有原始資料、可操作步驟、實際交付物及明確完成標準。
 
 ## 檔案與發布
 
 - `README.md`：GitHub 直接閱讀的精簡教材。
 - `docs/index.html`：課程目錄。
-- `docs/start.html`、`install.html`、`differences.html`、`terms.html`、`example.html`：五個主線章節。
+- `docs/start.html`、`install.html`、`differences.html`、`terms.html`、`github.html`、`example.html`：六個主線章節。
 - `docs/extras.html`：財務對帳與操作表單的延伸練習。
 - `docs/styles.css`：電腦、手機與列印樣式。
 - `docs/app.js`：任務複製、連到名詞時自動展開、舊首頁錨點導向對應章節。
 - `docs/practice.html`、`docs/practice.js`：無後端的商品表單練習場；不儲存正式資料，只預覽及下載草稿。
 - `practice-kit/`：練習資料與 `.agents/skills/lytc-product-brief/SKILL.md` 原始檔。
+- `docs/downloads/codex-github-setup.txt`、`codex-first-task.txt`、`codex-update-project.txt`：準備、美編教練與 Pull 對話，與 GitHub／實作章節同步。
+- `practice-kit/START-HERE.md`：舊版需求單補充練習，與公司 Repo 主線分開。
 - `docs/downloads/codex-practice-kit.zip`：供同事下載的練習包，包含完整 `practice-kit/` 目錄與隱藏 Skill 資料夾。
 - `docs/.nojekyll`：讓 GitHub Pages 直接提供靜態檔案。
 

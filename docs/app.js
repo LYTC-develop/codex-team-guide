@@ -29,8 +29,10 @@
       try {
         if (!navigator.clipboard || !window.isSecureContext) throw new Error('Unavailable');
         await navigator.clipboard.writeText(target.textContent.trim());
-        announce('已複製。在 Codex 開啟練習資料夾後，就可以貼上。');
+        announce('已複製，請貼到本步驟指定的位置。');
       } catch {
+        const disclosure = target.closest('details');
+        if (disclosure) disclosure.open = true;
         const range = document.createRange();
         range.selectNodeContents(target);
         const selection = window.getSelection();

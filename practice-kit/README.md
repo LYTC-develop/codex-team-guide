@@ -2,11 +2,11 @@
 
 這包包含虛構訂單、商品資料與一份可重用的 Skill，不含公司實際帳務。
 
-1. 解壓縮後，在 Codex 開啟這個 `practice-kit` 資料夾。
-2. 告訴 Codex：「先閱讀這個專案的 README.md，再帶我做一個練習。」
-3. 第一次請先做「Skill：整理商品美編需求單」，成果儲存到 `outputs/`。
+這是公開的補充練習包；正式主線改用公司 GitHub 美編專案，請先閱讀網站第 5、6 章。
 
-[依照網站第 5 章一步步操作](https://lytc-develop.github.io/codex-team-guide/example.html)。財務與表單操作是完成主線後的延伸練習。
+1. 解壓縮後，在 Codex 開啟這個 practice-kit 資料夾。
+2. 財務或表單練習可直接使用以下任務。
+3. 舊版美編需求單練習，可貼 START-HERE.md 的教練對話。這份 ZIP 不含 Git 紀錄，不能 Pull。
 
 ## Doc：找出收款差異
 
