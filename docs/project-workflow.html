@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#183de4"><title>把工作建立成 Codex 專案｜LYTC Codex 團隊指南</title><meta name="description" content="從市場對照、Doc、AGENTS.md 與 Repo Skill 建立可重複的 Codex 工作專案，再用最小試作驗證流程。"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=3.4"><script src="app.js?v=3.4" defer></script></head>
+<body><a class="skip" href="#main">跳到主要內容</a><header class="site-header"><a class="brand" href="index.html"><span class="logo">L↗</span> LYTC <span class="brand-note">團隊工作指南</span></a><nav aria-label="網站導覽"><a href="index.html">課程目錄</a><a href="extras.html">延伸練習</a></nav></header>
+<div class="course"><aside class="course-sidebar"><details class="chapter-menu" open><summary>閱讀章節 <span aria-hidden="true">⌄</span></summary><nav aria-label="課程章節"><a href="start.html"><span>01</span><span>開始之前</span></a><a href="install.html"><span>02</span><span>從零安裝 Codex</span></a><a href="differences.html"><span>03</span><span>跟 ChatGPT Web 差在哪</span></a><a href="terms.html"><span>04</span><span>工作會遇到的名詞</span></a><a href="github.html"><span>05</span><span>連接 GitHub，取得公司專案</span></a><a href="example.html"><span>06</span><span>完成第一個工作範例</span></a><a href="google-drive.html"><span>07</span><span>Google Drive 與 Sheets</span></a><a href="project-workflow.html" aria-current="page"><span>08</span><span>把工作建立成專案</span></a></nav></details><p>先完成一件工作，<br>再把方法用到下一件。</p></aside>
+<main id="main" class="chapter-main">
+<div class="chapter-heading"><p class="eyebrow">第 08 章 / 共 08 章</p><h1>先建立工作方法，<br>再開始製作</h1></div>
+<p class="lead">當一件工作之後還會再做，不要每次都從空白對話開始。先讓 Codex 找市場對照、整理專案 Doc、建立可重複的 Skill，再用一個小成果驗證，才能維持品牌與品質的一致。</p>
+<div class="walkthrough-route"><span>找市場對照</span><span>整理 Doc</span><span>建立 Skill</span><span>最小試作</span><span>校對與固定</span></div>
+<p class="success"><strong>這是「美編製圖」專案真正採用的順序。</strong><br>市場案例提供方向，商品資料限制能說什麼，Doc 保存品牌與來源，Skill 固定製程；最後仍要看實際作品，不能只因 AI 產出成功就算完成。</p>
+
+<section class="lesson-block"><h2>四種檔案各自負責什麼</h2><div class="setup-choices"><p><strong>Doc</strong><span>保存品牌事實、商品資料、來源、風格邊界與這次決策。資料改了，就更新 Doc。</span></p><p><strong>Skill</strong><span>保存會在多次任務重複的步驟、輸入、輸出與完成標準。單次配色不急著變成 Skill。</span></p><p><strong>AGENTS.md</strong><span>是專案總規則：先讀什麼、可改哪裡、用哪個 Skill、成果放哪裡。</span></p><p><strong>Example</strong><span>保存已接受的做法與版本比較，讓下一次知道什麼叫做符合這個專案。</span></p></div></section>
+
+<ol class="steps">
+<li id="scope"><h2>先把「一項工作」說清楚</h2><p>一個專案應服務一種長期工作，例如「輕食糧飲商品 Landing Page 製圖」，不要把三個品牌、社群發文、財務報表和網站維護全部塞在一起。先確定主要使用者、交付物、使用位置與不包含的範圍。</p><p>新專案資料夾可以放在<strong>文件 → Codex工作區</strong>，名稱用「品牌－工作類型」。回 Codex 按 <strong>Mac：Command＋O／Windows：Ctrl＋O</strong> 開根目錄，再按 <strong>Command＋N／Ctrl＋N</strong> 建立 Local 新任務。</p><p class="checkpoint">根目錄與專案名稱能一眼看出服務哪個品牌、完成哪種工作。不同正式品牌使用不同專案或專案副本。</p></li>
+
+<li id="research"><h2>製作前，先找對照與可用方法</h2><p>以美編專案為例，新活動先查看約三個相關官方商品頁，其中至少兩個屬於同品類或相近購買需求；再找與本次構圖、文字層級或交付方式相近的案例。每個來源記錄網址、日期，以及<strong>真的看過畫面或只有讀到文字</strong>。</p><p>同時讓 Codex 檢查專案內與目前可用的 Skills：哪些可以沿用、哪些需要調整、哪些能力缺少。不要只因名稱相似就安裝；也不要把 Skill 當成圖片生成工具或事實來源。</p><div class="setup-choices"><p><strong>可以借鑑</strong><span>購買理由的排序、證據如何呈現、數字層級、構圖動線與手機閱讀方式。</span></p><p><strong>不能帶走</strong><span>競品商標、圖片、整段文案、價格、營養數字、功效宣稱及品牌專屬風格。</span></p><p><strong>正確說法</strong><span>沒有銷量或成效證據時稱為「市場案例」；不能只因仍在販售或看起來熱門就稱為已驗證爆款。</span></p></div></li>
+
+<li id="structure"><h2>把資料、規則和成果分開</h2><p>Codex 盤點完現況後，再建立最少但完整的專案骨架。既有專案沿用原來命名，不為了套模板大改。</p><div class="folder-map">品牌-工作類型 /<br>├── README.md　　　　　　　第一次怎麼開始<br>├── AGENTS.md　　　　　　　專案範圍與工作規則<br>├── docs/　　　　　　　　　品牌、商品、來源與決策<br>├── templates/　　　　　　 空白研究與交付模板<br>├── .agents/skills/　　　　 穩定且可重複的製程<br>├── examples/　　　　　　　去識別、已接受的範例<br>├── personal/　　　　　　　品牌素材與活動研究<br>└── outputs/　　　　　　　 版本化成果與校對紀錄</div><p>日常素材和作品可留在 personal/、outputs/，由 .gitignore 排除。團隊共用的是 AGENTS.md、Docs、Skills、模板與去識別範例。忽略檔案不等於備份，正式素材仍要依公司方式保存。</p></li>
+
+<li id="coach"><h2>整段貼入「建立專案教練」</h2><p>在剛開啟的新專案任務中，按下方複製，把完整內容貼進 Codex。它會先盤點與研究，分階段等你確認，不會一開始就自由生圖。</p>
+<div class="prompt coach-prompt"><div><strong>由 Codex 帶你從對照、Doc、Skill 做到試作</strong><button data-copy="prompt-project-coach">複製完整教學對話</button></div><details><summary>查看完整內容</summary><p id="prompt-project-coach">你是我的 Codex 專案建立教練。請用繁體中文，帶我把一項會重複進行的工作整理成可維護的 Codex 專案。這次以「美編／行銷製圖」為例；目標是先找市場對照、整理 Doc 與 Skill，再做一個試作品，不是一開始就自由生圖。
+
+【教學方式】
+每次只做一個階段，使用「現在做什麼 → 你會直接做什麼 → 我需要確認什麼 → 怎樣算完成」說明。你能搜尋、讀檔、建資料夾與寫文件的部分直接做；每個階段完成後等待我的指定回覆。不要把計畫當完成，也不要在市場研究與專案骨架完成前開始正式製圖。
+
+【基本原則】
+1. 搜尋對照是找表達方式、資訊層級與市場慣例，不是複製競品圖片、文案、商標或沒有來源的數字。
+2. 市場上正在使用的案例只能稱「市場案例」；有可核對的排名、銷量或成效來源，才能寫成有依據的市場訊號。不能把看起來熱門說成已驗證有效。
+3. Doc 保存本專案的事實、來源、風格邊界與決策；Skill 保存可以重複執行的步驟與完成標準；AGENTS.md 告訴 Codex 在本專案先讀什麼、能改哪裡、成果放哪裡。
+4. 一次性的顏色、單張構圖或個人喜好先放 Doc，不急著寫成 Skill。只有跨任務仍會重複使用、輸入輸出清楚且能驗收的方法，才建立 Repo Skill。
+5. 每個正式品牌使用獨立專案或獨立專案副本，不把另一品牌的風格、價格、營養數字或素材混進來。
+
+【階段 1：確認目標、位置與現況】
+實際確認目前開啟的專案根目錄與 Git 狀態。若現在只是空白工作資料夾，先問我最多三個會改變架構的問題：要完成什麼重複工作、服務哪個品牌／受眾、主要交付物與使用位置是什麼。已有答案就不要重問。
+依答案建議一個清楚的資料夾名稱，例如「品牌-工作類型」，並說明我應把它放在「文件／Codex工作區」下。若需要我在 Codex 換資料夾，教我按 Mac Command＋O／Windows Ctrl＋O 開啟根目錄，再按 Command＋N／Ctrl＋N 建立 Local 新任務。
+先盤點目前已有的 README.md、AGENTS.md、docs/、templates/、examples/、.agents/skills/、素材與舊成品；沒有就明說，不假裝存在。回報本次專案範圍與不包含的工作，等我回覆「開始找對照」。
+
+【階段 2：找對照，盤點 Doc 與 Skill】
+我回覆後，先查當前可開啟且與本次市場、品類、用途接近的來源。美編專案通常建立約三個官方商品／品牌頁案例池，其中至少兩個是同品類或相近購買需求；再找至少兩個與本次構圖、文字層級或交付方式相近的案例。優先官方頁與原始資料，記錄 URL、查閱日期、實際看過圖片或只有文字、與本專案的關聯。
+每個案例只整理：它主打什麼、用什麼證據、消費者得到什麼利益、視覺如何抓眼、哪些做法可借鑑、哪些品牌元素與數字不可帶走。沒有成效資料就標示為市場案例，不稱爆款。
+同時檢查目前 Codex 可用的 Skills、專案內 .agents/skills、外掛與工具。列出「可直接沿用」「需要調整」「目前缺少」；只讀任務相關內容，不因名稱相似就安裝陌生 Skill，也不把 Skill 當成生圖引擎或資料來源。
+先建立或更新研究草稿，把來源與觀察保存到 docs/research/ 或 personal/campaigns/ 下的 market-scan.md。向我展示案例池、可沿用 Skills、資料缺口與建議的專案骨架，等我回覆「建立專案」。
+
+【階段 3：建立可長期使用的專案骨架】
+我回覆後，依現況建立最少但完整的結構。既有專案沿用其命名，不為了套模板大改；新專案預設包含：
+- README.md：這個專案解決什麼、第一次怎麼開始。
+- AGENTS.md：範圍、先讀資料、可寫位置、禁止混用資料、路由到哪個 Skill、交付與驗證規則。
+- docs/00-project-brief.md：目標、受眾、交付物、渠道與成功條件。
+- docs/01-brand-and-style.md：品牌不變項、可變元素、文字語氣、參考與禁用做法。
+- docs/02-source-register.md：商品事實、價格／數字／宣稱的來源與日期。
+- templates/market-scan.md：每次研究案例與逐件製作決策的空白模板。
+- personal/：本品牌素材、活動資料與私人研究；outputs/：版本化成果與交付紀錄。
+- .gitignore：避免 personal/、outputs/、密碼與暫存檔進 Git。
+
+只有流程已足夠清楚且會重複使用時，才建立一個最小的 Repo Skill，放在 .agents/skills/【技能名稱】/SKILL.md。可用時請使用 skill-creator 建立或檢查它。Skill 至少說清楚：何時觸發／不觸發、要讀哪些 Doc、輸入與缺口、逐步流程、輸出位置、完成標準與不能宣稱的事情。不要一次建立很多重疊 Skills。
+建立後實際讀回所有入口與連結，確認 Codex 從專案根目錄能發現 AGENTS.md 與 Repo Skill。先不要製作正式成品。列出「Doc 保存什麼」「Skill 重複什麼」「AGENTS.md 如何路由」，等我回覆「開始試作」。
+
+【階段 4：用新專案做一個最小試作】
+我回覆後，只選一個代表性成果驗證流程。美編專案先做一張商品首圖或一個版型，不直接擴成整套。
+製作前依 market-scan 再回看相關案例，寫下這次的「主張 → 證據 → 消費者利益 → 視覺抓眼 → 下一步」，以及一至兩個待測假設。所有價格、規格、營養數字、功效、評價與活動條件都要能回到本商品來源；資料不足就標為待確認，不拿競品資料補空白。
+依 Doc 的品牌不變項與 Skill 的步驟實際製作，保存到 outputs/pilot/v01/；保留 prompt、來源與 delivery.md。產生圖片後必須實際看圖，核對品牌、商品、繁體中文、數字、尺寸與手機可讀性。工具只回傳成功訊息而沒有檔案，不算完成。
+提供可開啟的成果與簡短檢查結果，請我親自查看，再等我回覆「試作通過」或具體修改內容。
+
+【階段 5：把有效做法固定下來】
+我確認後，區分三種內容：本次活動限定、此品牌長期不變、所有同類任務都可重複。前兩者更新 Doc；第三種才更新 Skill。不要把單次喜好擴大成公司所有品牌的固定風格。
+若試作能作為示範，去除私人資料後放 examples/，保留 v01 與後續版本供比較。檢查 README 入口、AGENTS.md 路由、Doc 來源、Skill 觸發、輸出路徑及 Git 忽略規則。列出已驗證、待確認與需要真實成效數據才能判斷的項目。
+若我要與團隊共用，再確認 GitHub 組織、Repo 名稱與權限，將共用規則、Docs、Skills、模板及去識別範例放入 Git；personal/ 與 outputs/ 不推送。沒有我的明確要求，不自行建立公開 Repo、Push、發布或覆寫既有公司專案。
+
+【本次完成標準】
+專案根目錄能被 Codex 正確開啟；至少有清楚 README、AGENTS.md、核心 Docs、研究模板與資料分區；只有真正重複的流程才有 Repo Skill；一個試作品能追溯到來源、市場對照、Doc 與 Skill，並經實際檢查。成果是「有市場依據的可測設計」，不是宣稱市場已證明它一定有效。
+
+現在只開始「階段 1」，等我回覆。</p></details></div>
+<p class="quiet-link"><a href="downloads/codex-build-project.txt" download>下載建立專案教學對話 ↓</a></p><p class="checkpoint">第一則回覆應先確認專案根目錄、現有檔案與工作範圍，再請你回覆「開始找對照」。如果它直接開始生圖，請它回到階段 1。</p></li>
+
+<li id="pilot"><h2>先做一個試作品，再固定風格</h2><div class="dialogue-demo"><p class="demo-label">示範對話流程 · 每個檢查點都先看內容</p><div><b>Codex</b><p>確認這個專案服務哪個品牌、做哪種工作，以及目前有哪些檔案。</p></div><div class="your-turn"><b>你確認後回覆</b><p>開始找對照。</p></div><div><b>Codex</b><p>整理市場案例、來源、可用 Skills、缺口與建議骨架。</p></div><div class="your-turn"><b>你看完來源與分類後回覆</b><p>建立專案。</p></div><div><b>Codex</b><p>建立 README、AGENTS.md、Docs、模板；只有穩定流程才建 Skill。</p></div><div class="your-turn"><b>你確認架構後回覆</b><p>開始試作。</p></div><div><b>Codex</b><p>用新方法完成一個最小成果，實際看圖、校對並提供檔案。</p></div><div class="your-turn"><b>你親自檢查後回覆</b><p>試作通過。</p></div></div><p>第一次先驗證一張圖，因為這時最容易看出 Doc 是否缺資料、Skill 是否寫得太空泛，以及風格規則是否真的能重複。試作通過後，才擴成整套或交給其他同事。</p></li>
+
+<li id="share"><h2>穩定後，才交給團隊共用</h2><p>共用 Repo 放規則、Docs、Skills、模板及已去識別的範例；真實活動素材與作品留在每位同事自己的 personal/、outputs/。公司維護者更新共用內容後，同事用 Pull 取得新方法。</p><p>官方說明指出，本機專案的<strong>主要資料夾</strong>是新任務預設工作位置，也是 Codex 自動發現 AGENTS.md 與 Skills 的起點。因此開專案時要選根目錄，不要只開 outputs/ 或某個素材子資料夾。</p><p class="checkpoint">另一位同事 Clone 後，只看 README 就知道怎麼開始；開根目錄後 Codex 能讀到 AGENTS.md 與 Repo Skills；私人素材沒有進 Git。</p></li>
+</ol>
+
+<div class="finish"><strong>這個方法解決的不是「缺少靈感」，而是缺少可重複的決策。</strong><p>市場對照避免完全憑空創作；Doc 讓品牌事實與視覺邊界不隨對話漂移；Skill 讓每次都走過相同的關鍵步驟；Example 讓團隊知道已接受的品質長什麼樣。</p><p>市場案例只能讓設計有依據。是否真的提升點擊、轉換或銷售，仍要用上線後的真實數據驗證。</p></div>
+<p class="fine">「美編製圖」製程參考公司 <a href="https://github.com/LYTC-develop/product-landingpage-starter">Product Landing Page Starter Kit</a> 的市場研究、逐圖拆解、版本保存與交付校對方法。Codex 專案會以主要資料夾提供檔案脈絡並自動發現專案指引與 Skills；詳細機制見 <a href="https://learn.chatgpt.com/docs/projects">OpenAI 專案說明</a>、<a href="https://learn.chatgpt.com/docs/agent-configuration/agents-md">AGENTS.md 說明</a>與 <a href="https://learn.chatgpt.com/docs/build-skills">建立 Skills</a>。</p>
+<nav class="chapter-pager" aria-label="章節翻頁"><a href="google-drive.html">← 上一章：Google Drive 與 Sheets</a><a href="extras.html">完成了，看看延伸練習 →</a></nav>
+<footer><span>LYTC · v3.4 · 2026.09.21</span><div><a href="https://github.com/LYTC-develop/codex-team-guide">GitHub 教材</a><a href="index.html">課程目錄</a></div></footer></main></div><div class="toast" role="status" aria-live="polite"></div></body></html>
